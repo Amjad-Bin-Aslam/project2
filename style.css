@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none; 
+}
+li{
+    list-style: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.nav-container{
+    padding: 20px 0;
+
+}
+.nav-container h2{
+    color: rgb(29,29,29);
+    margin-left: 30px;
+}
+.nav-container .nav{
+    justify-self: flex-end;
+    display: flex;
+}
+.nav a{
+    margin: 0 20px;
+    color: black;
+}
+.nav  .active{
+    background: #333;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+.header{
+    width: 80%;
+    margin:70px auto ;
+}
+.container img{
+    width: 100%;
+}
+.container h3{
+    font-size: 70px;
+}
+.container h3::after{
+    content: '';
+    position: absolute;
+    background: rgba(23,125,165);
+    height: 3px;
+    width: 130px;
+    top: 50%;
+    left: 15%;
+}
+.container div a{
+    padding: 15px;
+    background: black;
+    color: white;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 20px 0;
+}
+.head{
+    position: absolute;
+    top: 310px;
+    left: 15%;
+    opacity: 0.6;
+    z-index: -1;
+}
+.footer{
+    margin: 100px 0 0 0;
+    background: #333;
+    padding:100px 100px ;
+    
+}
+.footer .main-container{
+   display: flex;
+   justify-content: space-between;
+}
+h4{
+    margin: 10px 0;
+    font-size: 20px;
+    color: blue;
+}
+hr{
+    margin-top: 8px;
+    color:bisque;
+}
